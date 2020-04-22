@@ -1,0 +1,35 @@
+{
+  "name": "oplab-discord",
+  "version": "0.0.1",
+  "description": "Oplab discord bot.",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oplab-team/oplab-discord.git"
+  },
+  "author": "César Vargas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oplab-team/oplab-discord/issues"
+  },
+  "homepage": "https://github.com/oplab-team/oplab-discord#readme"
+}
