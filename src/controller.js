@@ -32,10 +32,10 @@ const controller = async request => {
         const quotes = await oplab.getStudies(args)
         const reply = `as cotações são as seguintes:\n${quotes
           .map(
-            ({ target: { symbol, close, open } }) =>
+            ({ target: { symbol, close, variation } }) =>
               `${
-                open - close < 0 ? ':green_circle:' : ':red_circle:'
-              } ${symbol}: **R$${close}** | *(${(((close - open) / open) * 100).toFixed(2)}%)*`
+                variation >= 0 ? ':green_circle:' : ':red_circle:'
+              } ${symbol}: **R$${close}** | *(${(variation).toFixed(2)}%)*`
           )
           .join('\n')}`
         msg.reply(reply)
