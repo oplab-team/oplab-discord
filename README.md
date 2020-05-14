@@ -30,5 +30,9 @@ You can send your contributions!
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+If you don' know where to start, I suggest you take a look at [Oplab's not-so-public API](https://docs.oplab.com.br).
+
+You will also need an Oplab account in order for it to work. I suggest you pay the full price, since it's a great platform!
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
